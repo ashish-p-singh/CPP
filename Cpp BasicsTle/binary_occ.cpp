@@ -24,5 +24,6 @@ int search_first(vector<int> a,int target) {
     return a[l]==target?l:-1;
 }
 int main() {
+
     return 0;
 }

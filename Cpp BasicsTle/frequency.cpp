@@ -11,7 +11,7 @@ int main() {
     }
     for (auto c:s) {
         if (mp[c]==maxi) {
-            cout<<c;
+            cout<<c; 
         }
     }
     return 0;

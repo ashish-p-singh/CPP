@@ -6,15 +6,15 @@ void sieve(int n) {
     primes[0]=primes[1]=false;
     for (int i=2;i<=n;i++) {
         if (primes[i]) {
+            cout<<i<<" ";
             for (int j=i*2;j<=n;j+=i) {
                 primes[j]=false;
             }
         }
     }
-    
 }
-int main() {
-    int n;
+    
+int main() {|    int n;
     cin>>n;
     sieve(n) ;
     return 0;
