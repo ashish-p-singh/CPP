@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define PI 3.14;
-/ class Circle {
+// #define PI 3.14;
+//  class Circle {
 // public:
 //     int radius;
 //     int  area;
@@ -31,29 +31,27 @@ using namespace std;
 //         return perimeter=4*side;
 //     }
 // };
-class A{
-private:
-    int x=100;
-    friend class B;
-
-};
-class B {
-public:
-     void display(A obj) {
-         cout <<obj.x;
-     }
-};
+// class A{
+// private:
+//     int x=100;
+//     friend class B;
+//
+// };
+// class B {
+// public:
+//      void display(A obj) {
+//          cout <<obj.x;
+//      }
+// };
 
 int main() {
-
-        int divisior =3;
-        int dividend=10;
-        int sum=0;
-        int freq=-1;
-        while(sum<dividend){
-            sum=sum+divisior;
-            freq++;
+    vector <vector<int>> grid(4,vector<int>(5,0));
+    for (int i=0;i<grid.size();i++) {
+        for (int j=0;j<grid[i].size();j++) {
+            cout<<grid[i][j];
         }
-    cout<<freq;
+        cout<<endl;
     }
+}
+
 
