@@ -10,9 +10,14 @@ class Node{
     }
 };
 void InsertatHead(Node* &head,int data){
-    Node* temp=new Node(12);
+    Node* temp=new Node(data);
     temp->next=head;
     head=temp;
+}
+void InsertatTail(Node *tail,int data){
+    Node* temp=new Node(data);
+    tail->next=temp;
+    tail=tail->next;
 }
 void print(Node *&head){
     Node *temp=head;
@@ -24,7 +29,7 @@ void print(Node *&head){
 int main(){
     Node* node1=new Node(5);
     cout<<node1->data<<endl;
-    Node *head= node1;
-    InsertatHead(head,12);
-    print(head);
+    Node *tail= node1;
+    InsertatTail(tail,12);
+    print(tail);  
 }
