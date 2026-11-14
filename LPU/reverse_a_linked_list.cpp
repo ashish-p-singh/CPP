@@ -7,4 +7,4 @@ class Node{
         data=value;
         
     }
-}
+};

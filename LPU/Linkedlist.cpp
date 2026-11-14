@@ -16,7 +16,7 @@ public:
         head=nullptr;
     }
     void insertInBeg(int val) {
-        Node *newnode=new Node(int val);
+        Node *newnode=new Node(val);
         newnode->next=head;
         head=newnode;
     }
